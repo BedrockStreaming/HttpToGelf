@@ -20,7 +20,7 @@ var clientGelf = gelfling(config.host, config.port, {
 
 var gelfRouting = require('./lib/routes/gelf.js')(clientGelf, config);
 
-app.post('/gelf/log/', middleware.securityToken(security), gelfRouting.gelfLog);
+app.post('/gelf/log/:app/:category', middleware.securityToken(security), gelfRouting.gelfLog);
 
 
 app.get('/status', function (req, res){
