@@ -1,0 +1,24 @@
+{
+  "name": "service-log-gelf",
+  "version": "0.0.1",
+  "description": "HTTP service to log monitoring information with Gelf messages",
+  "main": "app.js",
+  "dependencies": {
+    "MD5"        : "~1.1.0",
+    "body-parser": "1.10.1",
+    "gelfling"   : "0.2.0",
+    "express"    : "~4",
+    "config"     : "~0.4.32",
+    "underscore" : "^1.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/M6Web/HttpToGelf"
+  },
+  "keywords": [
+    "gelf",
+    "log"
+  ],
+  "author": "M6Web",
+  "license": "BSD"
+}

@@ -1,0 +1,8 @@
+{
+	"config": {
+		"port": 12201,
+		"host": "localhost",
+		"secretKey": "raoulgotasecretkey",
+		"facility": "HttpToGelf - dev"
+	}
+}
