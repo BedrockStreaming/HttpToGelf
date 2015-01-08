@@ -10,7 +10,7 @@ var app = express();
 var bodyParser = require("body-parser");
 
 // parse application/json
-app.use(bodyParser.json())
+app.use(bodyParser.json());
 
 
 
