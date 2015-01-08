@@ -36,7 +36,7 @@ app.get('/status', function (req, res){
 
 
 
-var port = process.env.NODE_PORT || '8080';
+var port = process.env.NODE_PORT || 8080;
 
 app.listen(port);
 console.log('Server running at http://127.0.0.1:'+port+' in '+app.settings.env+' mode');
