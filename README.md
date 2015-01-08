@@ -3,7 +3,7 @@ A node.js http to gelf logger
 
 ## usage 
 
-POST `/gelf/log/myapp/mycategory/?token=xxx`
+POST `/gelf/log/myapp/mycategory/?token=xxx`  
 add Content-Type: /application/json to the headers
 
 ## message generated
