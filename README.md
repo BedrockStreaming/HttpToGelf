@@ -1,5 +1,5 @@
 # HttpToGelf
-A node.js http to gelf logger 
+A node.js http to [gelf](https://www.graylog2.org/resources/gelf) logger 
 
 ## usage 
 
