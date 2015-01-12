@@ -7,6 +7,7 @@ var security = require('./lib/security/security.js')(config.secretKey),
     express = require('express');
 
 var app = express();
+app.enable('trust proxy')
 var bodyParser = require("body-parser");
 
 // parse application/json
