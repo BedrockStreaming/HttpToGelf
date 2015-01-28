@@ -5,7 +5,7 @@ A node.js http to [gelf](https://www.graylog2.org/resources/gelf) logger
 
 ### send a message
 
-POST `/gelf/log/{client}/{myapp}/{mycategory}/?token=xxx`  
+POST `/gelf/log/{myapp}/{mycategory}/?token=xxx`  
 add Content-Type: /application/json to the headers
 
 ### compute the token 
