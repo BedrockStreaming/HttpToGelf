@@ -2,7 +2,7 @@
 
 var config = require('config').config;
 
-var security = require('./lib/security/security.js')(config.secretKey),
+var security = require('./lib/security/security.js')(config),
     middleware = require('./lib/middleware.js');
     express = require('express');
 
@@ -12,8 +12,6 @@ var bodyParser = require("body-parser");
 
 // parse application/json
 app.use(bodyParser.json());
-
-
 
 // gelf client
 var gelfling = require('gelfling');
@@ -27,7 +25,7 @@ var clientGelf = gelfling(config.host, config.port, {
 
 var gelfRouting = require('./lib/routes/gelf.js')(clientGelf, config);
 
-app.post('/gelf/log/:app/:category/', middleware.securityToken(security), gelfRouting.gelfLog);
+app.post('/gelf/log/:client/:app/:category/', middleware.securityToken(security), gelfRouting.gelfLog);
 
 
 app.get('/status', function (req, res){

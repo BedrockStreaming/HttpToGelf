@@ -2,7 +2,14 @@
 	"config": {
 		"port": 12201,
 		"host": "localhost",
-		"secretKey": "raoulgotasecretkey",
-		"facility": "HttpToGelf - dev"
+		"facility": "HttpToGelf - prod",
+		"clients" : {
+			"firstclient" : {
+				"secretKey": "raoulgotasecretkey"
+			},
+			"secondclient" : {
+				"secretKey": "raoulgotasecretkey2"
+			}
+		}
 	}
 }
