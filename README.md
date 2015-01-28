@@ -3,8 +3,16 @@ A node.js http to [gelf](https://www.graylog2.org/resources/gelf) logger
 
 ## usage 
 
+### send a message
+
 POST `/gelf/log/myapp/mycategory/?token=xxx`  
 add Content-Type: /application/json to the headers
+
+### compute the token 
+
+`md5(app + category + secretKey);`
+
+`secretKey` is located in `config/ENV.json`
 
 ## message generated
 
