@@ -2,7 +2,7 @@
 
 var config = require('config').config;
 
-var security = require('./lib/security/security.js')(config),
+var security = require('./lib/security/security.js')(config.clients),
     middleware = require('./lib/middleware.js');
     express = require('express');
 
