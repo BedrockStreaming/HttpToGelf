@@ -12,7 +12,7 @@ add Content-Type: /application/json to the headers
 
 `md5(app + category + secretKey);`
 
-`secretKey` is located in `config/ENV.json` according to the {client}
+`secretKey` is located in `config/ENV.json` according to the {app}
 
 ## message generated
 

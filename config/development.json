@@ -3,11 +3,11 @@
 		"port": 12201,
 		"host": "localhost",
 		"facility": "HttpToGelf - prod",
-		"clients" : {
-			"firstclient" : {
+		"apps" : {
+			"firstapp" : {
 				"secretKey": "raoulgotasecretkey"
 			},
-			"secondclient" : {
+			"secondapp" : {
 				"secretKey": "raoulgotasecretkey2"
 			}
 		}
