@@ -2,7 +2,7 @@
 
 var config = require('config').config;
 
-var security = require('./lib/security/security.js')(config.secretKey),
+var security = require('./lib/security/security.js')(config.apps),
     middleware = require('./lib/middleware.js');
     express = require('express');
 
@@ -12,8 +12,6 @@ var bodyParser = require("body-parser");
 
 // parse application/json
 app.use(bodyParser.json());
-
-
 
 // gelf client
 var gelfling = require('gelfling');
