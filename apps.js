@@ -18,7 +18,6 @@ var gelfling = require('gelfling');
 
 var clientGelf = gelfling(config.host, config.port, {
   defaults: {
-        facility: config.facility,
         level: gelfling.INFO
     }
 })

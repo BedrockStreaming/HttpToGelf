@@ -31,15 +31,15 @@ will generate this gelf message :
 
 ```
 {
-       "facility" => "HttpToGelf - dev",
+           "from" => "HttpToGelf - dev",
           "level" => 6,
         "version" => "1.0",
            "host" => "MacBook-Pro-de-Olivier-2.local",
        "@version" => "1",
      "@timestamp" => "2015-01-08T15:09:16.257Z",
     "source_host" => "127.0.0.1",
-        "message" => "{\"object\":\"message from myapp : mycategory\",\"payload\":\"{\\\"charlie\\\":\\\"jesuischarlie\\\",\\\"test\\\":\\\"raoul\\\"}\",\"app\":\"myapp\",\"category\":\"mycategory\",\"test\":\"raoul\",\"charlie\":\"jesuischarlie\"}",
-         "object" => "message from myapp : mycategory",
+        "message" => "{\"object\":\"message from application myapp, from category  mycategory\",\"payload\":\"{\\\"charlie\\\":\\\"jesuischarlie\\\",\\\"test\\\":\\\"raoul\\\"}\",\"app\":\"myapp\",\"category\":\"mycategory\",\"test\":\"raoul\",\"charlie\":\"jesuischarlie\"}",
+         "object" => "message from application myapp, from category mycategory",
         "payload" => "{\"charlie\":\"jesuischarlie\",\"test\":\"raoul\"}",
             "app" => "myapp",
        "category" => "mycategory",
