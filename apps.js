@@ -18,9 +18,9 @@ var gelfling = require('gelfling');
 
 var clientGelf = gelfling(config.host, config.port, {
   defaults: {
-    	facility: config.facility,
-    	level: gelfling.INFO
-	}
+        facility: config.facility,
+        level: gelfling.INFO
+    }
 })
 
 var gelfRouting = require('./lib/routes/gelf.js')(clientGelf, config);
