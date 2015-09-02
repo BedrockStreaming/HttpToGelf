@@ -10,6 +10,12 @@ var app = express();
 app.enable('trust proxy')
 var bodyParser = require("body-parser");
 
+// enable cors
+var cors = require('cors');
+app.use(cors({
+	methods: ['OPTIONS', 'POST']
+}));
+
 // parse application/json
 app.use(bodyParser.json());
 
@@ -25,6 +31,10 @@ var clientGelf = gelfling(config.host, config.port, {
 var gelfRouting = require('./lib/routes/gelf.js')(clientGelf, config);
 
 app.post('/gelf/log/:app/:category/', middleware.securityToken(security), gelfRouting.gelfLog);
+
+app.options('/gelf/log/:app/:category/', function (req, res){
+
+});
 
 
 app.get('/status', function (req, res){
