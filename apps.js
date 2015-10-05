@@ -7,7 +7,8 @@ var security = require('./lib/security/security.js')(config.apps),
     express = require('express');
 
 var app = express();
-app.enable('trust proxy')
+app.enable('trust proxy');
+app.disable('x-powered-by');
 var bodyParser = require("body-parser");
 
 // enable cors
