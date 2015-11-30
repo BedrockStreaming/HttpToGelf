@@ -9,7 +9,8 @@
     "gelfling"   : "0.2.0",
     "express"    : "~4",
     "config"     : "~0.4.32",
-    "cors"       : "~2.7"
+    "cors"       : "~2.7",
+    "flat"       : "1.6.0"
   },
   "repository": {
     "type": "git",
